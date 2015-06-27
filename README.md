@@ -8,7 +8,7 @@ I decided to open source it and get some feedback from others to try and improve
 
 ![Layout](http://i.imgur.com/wy5l7c5.png)
 
-This uses a directory layout I originally found [in this article](https://scotch.io/tutorials/angularjs-best-practices-directory-structure). I have found it to be really nice for setting up larger applications. 
+This uses a directory layout I originally found [in this article](https://scotch.io/tutorials/angularjs-best-practices-directory-structure). I have found it to be really nice for setting up larger applications. I also use some different patterns I've found to be helpful as well. 
 
 This uses:
 
