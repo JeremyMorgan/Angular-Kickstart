@@ -17,4 +17,4 @@ This uses:
 - **[Bootstrap](http://getbootstrap.com/)**
 - **[Flatly Theme](https://bootswatch.com/flatly/)**
 
-**[See a live version Here based on this repo. ](http://jeremymorgan.github.io/AngularStrap/)**
+**[See a live version Here based on this repo. ](http://jeremymorgan.github.io/AngularStrap/#/)**
