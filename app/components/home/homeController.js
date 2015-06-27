@@ -12,7 +12,7 @@
          * @param {string} [APIHOST] constant for pointing to REST server
          *
          */
-//            function pageController($scope, $http, $window, $q, asyncService, APIHOST) {
+//          function pageController($scope, $http, $window, $q, asyncService, APIHOST) {
             function pageController($scope, $http, $window, $q) {
 
             var vm = this;
@@ -23,10 +23,10 @@
             //properties
             // vm.APIHost = APIHOST;
             vm.heroHeading = "Hello, World!";
-            vm.heroText = "This is the AngularStrap home page. This text is being pulled from the pageController object, and can be populated by hand coding the property in the controller, dynamically or via services.";
+            vm.heroText = "This is the AngularStrap home page. This text is being pulled from the pageController, and can be populated by hand coding the property in the controller, dynamically or via services.";
 
             vm.col0heading = "Subsections";
-            vm.col0text = "I may populate this with a microservice! Or have this be a separate view. This template uses Angular UI Writer which is better than using the Angular router in my opinion.";
+            vm.col0text = "I may populate this with a microservice! Or have this be a separate view. This template uses Angular UI which is better than using the Angular router in my opinion.";
 
             function reloadPage() {
                 $window.location.reload();
