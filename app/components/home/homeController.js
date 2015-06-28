@@ -1,7 +1,7 @@
 (function () {
     'use strict';
     var controllerId = 'pageController';
-    angular.module('angularstrapControllers', []).controller(controllerId, ["$scope", "$http", "$window", "$q",
+    angular.module('angularstrapControllers', []).controller(controllerId, ["$scope", "$http", "$window", "$q", "asyncService",
 
         /**
          * Primary entry point for application
@@ -12,18 +12,21 @@
          * @param {string} [APIHOST] constant for pointing to REST server
          *
          */
-//          function pageController($scope, $http, $window, $q, asyncService, APIHOST) {
-            function pageController($scope, $http, $window, $q) {
+          function pageController($scope, $http, $window, $q, asyncService, APIHOST) {
 
             var vm = this;
 
             //services
-            //vm.angularstrapService = asyncService;
+            vm.angularstrapService = asyncService;
 
             //properties
-            // vm.APIHost = APIHOST;
-            vm.heroHeading = "Hello, World!";
-            vm.heroText = "This is the AngularStrap home page. This text is being pulled from the pageController, and can be populated by hand coding the property in the controller, dynamically or via services.";
+            vm.APIHost = APIHOST;
+
+            // get our hero text
+            asyncService.getHeroText(APIHOST);
+
+            vm.heroHeading = asyncService.retrievedData.HeroHeader;
+            vm.heroText = asyncService.retrievedData.HeroText;
 
             vm.col0heading = "Subsections";
             vm.col0text = "I may populate this with a microservice! Or have this be a separate view. This template uses Angular UI which is better than using the Angular router in my opinion.";
