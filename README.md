@@ -1,4 +1,4 @@
-# AngularStrap
+# Angular Kickstart
 
 Angular Boiler Plate Application
 
