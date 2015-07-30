@@ -10,7 +10,8 @@ angularstrapApp.config(['$stateProvider', '$urlRouterProvider', function($stateP
         .state('home', {
             url: '/',
             templateUrl: 'app/components/home/homeView.html',
-            controller: 'pageController'
+            controller: 'pageController',
+            controllerAs: 'ctrl'
         })
         .state('404', {
             url: '/404',
