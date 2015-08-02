@@ -2,7 +2,7 @@
     'use strict';
     var serviceId = 'asyncService';
 
-    angular.module('angularstrapServices', []).service(serviceId,
+    angular.module('angularKickstartServices', []).service(serviceId,
         ['$http', '$q', function asyncService($http, $q) {
             
             var factory = {

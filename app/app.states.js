@@ -3,7 +3,7 @@
  * more info on UI-Router states can be found at
  * https://github.com/angular-ui/ui-router/wiki
  */
-angularstrapApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
+angularKickstartApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
 
     // any unknown URLS go to 404
     $urlRouterProvider.otherwise('/404');
@@ -23,7 +23,6 @@ angularstrapApp.config(['$stateProvider', '$urlRouterProvider', function($stateP
             templateUrl: 'app/shared/404.html'
         })
         .state('about', {
-            // we'll add another state soon
             url: '/about',
             templateUrl: 'app/components/about/aboutView.html',
             controller: 'AboutController',

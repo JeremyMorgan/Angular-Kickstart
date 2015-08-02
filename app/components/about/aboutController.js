@@ -1,7 +1,7 @@
 (function () {
     'use strict';
     var controllerId = 'AboutController';
-    angular.module('angularstrapControllers', []).controller(controllerId, ["$scope", "$http", "$window", "$q", "asyncService",
+    angular.module('angularKickstartControllers', []).controller(controllerId, ["$scope", "$http", "$window", "$q", "asyncService",
 
         /**
          * Primary entry point for application
@@ -17,7 +17,7 @@
             var vm = this;
 
             //services
-            vm.angularstrapService = asyncService;
+            vm.angularKickstartService = asyncService;
 
             //properties
             vm.APIHost = APIHOST;
