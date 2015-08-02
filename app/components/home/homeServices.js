@@ -15,8 +15,8 @@
             function getHeroText(APIHOST) {
             
                 factory.retrievedData = {HeroHeader:"Header", HeroText:"ssdsd"};
-                factory.retrievedData.HeroHeader = "Hello World!";
-                factory.retrievedData.HeroText = "This is the angularKickstart home page. This text is being pulled from a service, and can be populated by hand coding the property in the controller, dynamically or via services.";
+                factory.retrievedData.pageHeader = "About this App";
+                factory.retrievedData.pageText = "This is a totally new page";
                 //console.log("at return: " + JSON.stringify(factory.retrievedData));
             }
             return factory;

@@ -25,12 +25,15 @@
             // get our hero text
             asyncService.getHeroText(APIHOST);
 
-            vm.heroHeading = asyncService.retrievedData.HeroHeader;
-            vm.heroText = asyncService.retrievedData.HeroText;
+            vm.pageHeading = asyncService.retrievedData.pageHeader;
+            
+            vm.pageText = asyncService.retrievedData.pageText;
 
-            vm.col0heading = "Subsections";
-            vm.col0text = "I may populate this with a microservice! Or have this be a separate view. This template uses Angular UI which is better than using the Angular router in my opinion.";
+            function reloadPage() {
+                $window.location.reload();
+            }
 
-       }
+            return vm;
+        }
     ]);
 })();
