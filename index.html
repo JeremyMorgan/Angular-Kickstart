@@ -1,19 +1,34 @@
-<!DOCTYPE html ng-app="angularKickstartApp" >
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" ng-app="angularKickstartApp">
+<!DOCTYPE html ng-app="angularstrapApp" >
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" ng-app="angularstrapApp">
 <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
     <link rel="stylesheet" href="assets/css/bootstrapFlatly/bootstrap.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.min.css" />
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.ie.min.css" />
+    <![endif]-->
+    <meta property="og:site_name" content="Angular Kickstart Homepage"/>
+    <meta property="og:title" content="Angular Kickstart Homepage"/>
+    <meta property="og:image" content="http://jeremymorgan.github.io/Angular-Kickstart/assets/img/angularstrap.png" />
+    <meta property="og:description" content="This is the home page for Angular Kickstart"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:url" content="http://jeremymorgan.github.io/Angular-Kickstart/"/>
 </head>
-<title>Angular Kickstart Angular Application Template</title>
+<title>AngularStrap Angular Application Template</title>
 <body>
+<div class="github-fork-ribbon-wrapper right">
+    <div class="github-fork-ribbon">
+        <a href="https://github.com/JeremyMorgan/Angular-Kickstart">Fork me on GitHub</a>
+    </div>
+</div>
 <div class="container">
     <div class="row clearfix">
         <div class="col-md-12 column">
             <nav class="navbar navbar-default" role="navigation">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                    <a class="navbar-brand" href="#/">Angular Kickstart</a>
+                    <a class="navbar-brand" href="#/">AngularStrap</a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
@@ -54,7 +69,28 @@
                         </div> <button type="submit" class="btn btn-default">Submit</button>
                     </form>
                     <ul class="nav navbar-nav navbar-right">
-
+                        <li>
+                            <a href="#">Link</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a href="#">Another action</a>
+                                </li>
+                                <li>
+                                    <a href="#">Something else here</a>
+                                </li>
+                                <li class="divider">
+                                </li>
+                                <li>
+                                    <a href="#">Separated link</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -65,14 +101,25 @@
     <!-- end dynamic content -->
 </div>
 </body>
-<!-- load jQuery from CDN --> 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<!-- load BootStrap from CDN --> 
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="assets/libs/angular/angular.js"></script>
-<script src="assets/libs/angular/angular-ui-router.js"></script>
-<script src="app/components/home/homeController.js"></script>
-<script src="app/components/home/homeServices.js"></script>
-<script src="app/app.modules.js"></script>
-<script src="app/app.states.js"></script>
+
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/bootstrap/dist/css/bootstrap.min.css"></script>
+<script src="/bower_components/angular/angular.min.js"></script>
+<script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="/app/app.config.js"></script>
+<script src="/app/app.states.js"></script>
+<script src="/app/components/home/home.controller.js"></script>
+<script src="/app/components/home/home.services.js"></script>
+<script src="/app/components/about/about.controller.js"></script>
+<script src="/app/components/about/about.services.js"></script>
+
+<script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-55959736-1', 'auto');
+    ga('send', 'pageview');
+</script>
 </html>

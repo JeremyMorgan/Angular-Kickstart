@@ -1,1 +1,1 @@
-angular.module('angularKickstartAnimations', ['ngAnimate']);
+angular.module('angularstrapAnimations', ['ngAnimate']);
