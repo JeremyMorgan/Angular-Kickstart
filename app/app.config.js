@@ -5,8 +5,7 @@
 angular
     .module('angularstrapApp', [
         'ui.router',
-        'angularstrapServices',
-        'angularstrapControllers'
+        'angularstrapApp.homeServices'
     ]);
 
 // set of config options stored in constant

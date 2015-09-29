@@ -27,7 +27,7 @@ angular.module('angularstrapApp')
             // we'll add another state soon
             url: '/about',
             templateUrl: 'app/components/about/about.view.html',
-            controller: 'AboutController',
+            controller: 'aboutController',
             controllerAs: 'ctrl'
         });
 }]);
