@@ -19,10 +19,8 @@
                 // this is where we'd put some ajax calls
 
                 factory.retrievedData = {
-                    HeroHeader: "Hello Angular Kickstart!",
-                    HeroText: "This is the Angular Kickstart home page. This text is being pulled from a service, and" +
-                    " can be" +
-                    " populated by hand coding the property in the controller, dynamically or via services."
+                    HeroHeader: "Hello AngularStrap!",
+                    HeroText: "This is the AngularStrap home page. This text is being pulled from a service, and can be populated by hand coding the property in the controller, dynamically or via services."
                 };
 
                 //factory.retrievedData.HeroHeader = "Hello World!";
