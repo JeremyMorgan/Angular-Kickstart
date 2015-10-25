@@ -15,7 +15,7 @@ angular.module('angularstrapApp')
     $stateProvider
         .state('home', {
             url: '/',
-            templateUrl: 'app/components/home/home.view.html',
+            templateUrl: 'app/components/home/views/home.view.html',
             controller: "homeController",
             controllerAs: 'ctrl'
         })
@@ -26,7 +26,7 @@ angular.module('angularstrapApp')
         .state('about', {
             // we'll add another state soon
             url: '/about',
-            templateUrl: 'app/components/about/about.view.html',
+            templateUrl: 'app/components/about/views/about.view.html',
             controller: 'aboutController',
             controllerAs: 'ctrl'
         });
