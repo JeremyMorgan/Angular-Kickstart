@@ -4,6 +4,7 @@
   "description": "Angular Kickstart",
   "main": "Index.html",
   "scripts": {
+    "postinstall": "bower cache clean && bower install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
