@@ -1,23 +1,23 @@
 {
-  "name": "Angular-Kickstart",
+  "name": "angular-kickstart",
   "version": "1.0.0",
-  "description": "Angular Kickstart",
-  "main": "Index.html",
+  "description": "Lean and simple bootstrap for Angular applications",
+  "main": "index.html",
   "scripts": {
-    "postinstall": "bower cache clean && bower install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/JeremyMorgan/Angular-Kickstart.git"
+    "url": "git+https://github.com/JeremyMorgan/Angular-Kickstart.git"
   },
   "keywords": [
-    "git"
+    "angular",
+    "angularjs"
   ],
   "author": "Jeremy Morgan",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/JeremyMorgan/Angular-Kickstart/issues"
   },
-  "homepage": "https://github.com/JeremyMorgan/Angular-Kickstart"
+  "homepage": "https://github.com/JeremyMorgan/Angular-Kickstart#readme"
 }

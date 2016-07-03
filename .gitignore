@@ -50,3 +50,6 @@ fabric.properties
 
 #Bower-based components
 bower_components/
+
+#NPM Components
+node_modules/
