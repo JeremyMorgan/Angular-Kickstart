@@ -1,6 +1,12 @@
 {
   "name": "angular-kickstart",
   "version": "1.0.0",
+  "dependencies": {
+    "angular" : "^1.5.7",
+    "angular-ui-router": "*",
+    "bootstrap": "*",
+    "jquery": "*"
+  },
   "description": "Lean and simple bootstrap for Angular applications",
   "main": "index.html",
   "scripts": {
