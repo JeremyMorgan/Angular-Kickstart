@@ -8,21 +8,49 @@
 
     function homeController($scope, $http, $window, $q, asyncService) {
 
-            var vm = this;
+        var vm = this;
 
-            //services
-            vm.angularstrapService = asyncService;
+        //services
+        vm.angularstrapService = asyncService;
 
-            asyncService.getHeroText();
+        // get our hero text (hardcoded) 
+        asyncService.getHeroText()
+            .then(function (data) {
+                vm.HeroHeader = asyncService.heroData.HeroHeader;
+                vm.HeroText = asyncService.heroData.HeroText;
+            }, function (error) {
+                vm.HeroHeader = "Error";
+                vm.HeroText = error;
+            });
 
-            // from async service
-            vm.HeroHeader = asyncService.retrievedData.HeroHeader;
-            vm.HeroText = asyncService.retrievedData.HeroText;
+        // real ajax calls
+        asyncService.getColumnData(1)
+            .then(function (data) {
+                vm.col1heading = data.title;
+                vm.col1text = data.body;
+            }, function (error) {
+                vm.col1heading = "Error";
+                vm.col1text = error.statusText;
+            });
 
-            // subsections
-            vm.col0heading = "Subsections";
-            vm.col0text = "I may populate this with a microservice! Or have this be a separate view. This template uses Angular UI which is better than using the Angular router in my opinion.";
+        asyncService.getColumnData(2)
+            .then(function (data) {
+                vm.col2heading = data.title;
+                vm.col2text = data.body;
+            }, function (error) {
+                vm.col2heading = "Error";
+                vm.col2text = error.statusText;
+            });
 
-            return vm;
-       }
+        asyncService.getColumnData(3)
+            .then(function (data) {
+                vm.col3heading = data.title;
+                vm.col3text = data.body;
+            }, function (error) {
+                vm.col3heading = "Error";
+                vm.col3text = error.statusText;
+            });
+
+        return vm;
+    }
 })();
