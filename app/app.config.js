@@ -4,14 +4,14 @@
 
 angular
     
-    .module('angularstrapApp', [
-        'ui.router',
+.module('angularstrapApp', [
+	'ui.router',
         'angularstrapApp.homeServices'
-    ])
+])
 
-    .constant('CONFIG', 
-    {
-	    DebugMode: true,
-	    StepCounter: 0,
-	    APIHost: 'http://localhost:12017'
-	}); 
+.constant('CONFIG', 
+{
+	DebugMode: true,
+	StepCounter: 0,
+	APIHost: 'http://localhost:12017'
+}); 
